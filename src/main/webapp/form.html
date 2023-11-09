@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h2>HTML Forms</h2>
+<div>
+    <form name="form1" action="form_ok.jsp" onsubmit="return validateForm()" method="post">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="성"><br>
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="이름"><br>
+
+        <label for="country">Country</label>
+        <select id="country" name="country">
+            <option value="Australia">대한민국</option>
+            <option value="Canada">이중국적자(대한민국 국적 포함)</option>
+            <option value="USA">외국인</option>
+        </select><br>
+
+        성별 :
+        <input type="radio" id="html" name="fav_language" value="MAN">
+        <label for="html">남성</label>
+        <input type="radio" id="css" name="fav_language" value="WOMAN">
+        <label for="css">여성</label><br>
+
+        <label for="major">전공</label>
+        <select id="major" name="major">
+            <option value="전산심화">전산심화</option>
+            <option value="전산1전공">전산1전공</option>
+            <option value="전산2전공">전산2전공</option>
+        </select><br>
+
+        <label for="date">생년월일 :</label>
+        <input type="date" id="date" name="birthdate" max="2025-12-31" min="2020-01-01"><br>
+
+        <label for="email">학교 이메일</label>
+        <input type="email" id="email" name="email" placeholder="2XX00XXX@.handong.ac.kr"><br>
+
+        <label for="phone">전화번호</label>
+        <input type="tel" id="phone" name="phone" placeholder="010-xxxx-xxxxx"><br>
+
+        <label for="school">소속 RC</label>
+        <input type="text" id="school" name="school" placeholder="ex) 손양원"><br>
+
+        <label for="address">방 호수</label>
+        <input type="text" id="address" name="address" placeholder="ex) 310호"><br>
+
+        <label for="hobby">취미</label>
+        <input type="text" id="hobby" name="hobby" placeholder="축구하기"><br>
+
+        <p>소감문 작성 :</p>
+        <p><label>
+            <textarea cols="50" rows="5" name="feedback"></textarea>
+        </label></p>
+
+
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+</body>
+</html>
